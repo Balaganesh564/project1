@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salcomp - salcomp</title>
+
+    <link rel="icon" href="icon.png" type="icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootstrap min.css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <!--Bootstrap bundle.js link-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+<!--owl courseal link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+
+        <div class="container-fluid">
+         <a class="navbar-brand img-fluid" href="index.html"> <img class="img-fluid"  width=250 src="salcomp_logo.png" alt=""> </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+             <span class="navbar-toggler-icon"></span>
+             <script>
+      
+      $(document).ready(function () {
+      $('.navbar-toggler').on('click', function () {
+        $(this).toggleClass('open');
+        if ($(this).hasClass('open')) {
+          $(this).html('<i class="fas fa-times"></i>'); // Change to close icon
+        } else {
+          $(this).html('<span class="navbar-toggler-icon"></span>'); // Change back to navbar icon
+        }
+      });
+    });
+
+             </script>
+         </button>
+         
+         <div class="collapse navbar-collapse" id="main_nav">
+            
+           <ul class="navbar-nav">
+              
+           </ul>
+           <ul class="navbar-nav ms-auto">
+               <li class="nav-item"><a class="nav-link fw-bold" target="_blank" href="index.html"> Home </a></li>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bold" target="_blank" href="#abouts" data-bs-toggle="dropdown"> About </a>
+                <ul class="dropdown-menu dropdown-menu-end fade-down">
+                  <li><a class="dropdown-item" target="_blank" href="history.html"> History</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="strategy.html"> Strategy </a></li>
+                  <li><a class="dropdown-item" target="_blank" href="sales-and-marketing.html"> sales & Marketting</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="r&d.html"> R & D</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="Manufacturing.html" > Manufacturing </a></li>
+                  <li><a class="dropdown-item" target="_blank" href="Quality_1.html"> Quality</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="code_of_conduct.html"> Code of Conduct </a></li>
+                </ul>
+            </li>
+               <li class="nav-item"><a class="nav-link fw-bold" target="_blank" href="#products"> products </a></li>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bold" target="_blank" href="#m-s" data-bs-toggle="dropdown"> Sustainability </a>
+                <ul class="dropdown-menu dropdown-menu-end fade-down">
+                  <li><a class="dropdown-item" target="_blank" href="social_res.html"> Social responsbility <a></li>
+                  <li><a class="dropdown-item" target="_blank" href="environment.html"> Environment </a></li>
+                  </li>
+ </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bolder" href="#contact" data-bs-toggle="dropdown"> Contact </a>
+                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                      <li><a class="dropdown-item" target="_blank" href="contact_information.html"> Contact Information </a></li>
+                      <li><a class="dropdown-item" target="_blank" href="download-center.html"> Download Center </a></li>
+                      <li><a class="dropdown-item" target="_blank"  href="contact_us.html"> Contact Us </a></li>
+
+                    </li>
+           </ul>
+         </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+    </nav>
+
+    <div class="content">
+
+      <div class="owl-carousel owl-theme p-1" id="owl-carousel-1">
+        <div class="item" style="background-image: url('slide1.png');background-color: rgba(0,0,0,0.5);">
+            <div class="overlay-content">
+                <h1>Experienced partner</h1>
+                <p >power supplies since 1982 world's first switch more charger for mobile phone in 1988.World largest manufracture of power supplies in low to medium power ranges.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('charger.png');">
+            <div class="overlay-content">
+                <h1>quality guaranteed</h1>
+                <p>A trusted partner for leading global customers.Systamatic processes yielding promised results.Focus on automation and constant improvment.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('calling.png');">
+            <div class="overlay-content">
+                <h1>globally present</h1>
+                <p>A World leading company in the field of high precision manufracturing.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+      
+      <div class="container p-3">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class=" text-center mt-3 t1" id="abouts">Salcomp develops and manufactures
+              </h1>
+            </div>
+      
+            <div class="col-sm-6 p-2">
+              <div class=" fs-5 p-3  mt-3">
+                <div class="card-body p-3">
+                  <ol class="text-start ">
+                    <li class="t2">Power supplies for mobile and other electronic devices, being a market leader in smart phone chargers. </li>
+                      <li class="mt-5 t3">IoT sensors based on Wirepas Mesh wireless connectivity technology, which enables scalable, reliable, and cost efficient IoT solution              </li>
+                       <li class="mt-5 t4">Precision structural parts and modules, 5G RF parts, magnetic materials</li>
+                    </ol>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-sm-6  mt-3 p-2">
+              <div class="fs-5 p-3">
+                <div class="card-body p-3">
+                <p class="t5">The cumulative production volume of 4 billion chargers makes Salcomp a pioneer in its industry. The current annual capacity of our production plants is approximately 520 million pieces. Salcomp’s headquarters are in Salo (Finland), and the production plants in Shenzhen and Guigang (China), in Manaus (Brazil) and in Chennai and Noida (India). In addition to these locations, we have offices in the USA, Brazil, Taiwan, South Korea and Hong Kong. During fiscal year 2019 Salcomp’s revenue was 601 million and the company has approximately 12,000 employees.</p>
+            </div>
+          </div>
+           </div>
+              
+            <div class="col-sm-12 text-center p-3 mt-1">
+              <i class="fa fa-newspaper fs-1 text-align pe-2"> </i> 
+              <p class="fs-4">NEWS</p>
+            </div>
+            <div class="col-sm-6 p-4">
+              <div class="card card-1 mb-3 shadow animate__animated animate__fadeInLeftBig">
+                <img src="inovation.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Congratulations on Schaeffler OPTIME wins the Industry 4.0 Innovation Award 2020!</h5> 
+                  <p class="card-text"> <i class="fa fa-calendar"></i> <small class="text-body-secondary text">Nov 18,2020</small></p>
+                  <p class="card-text">We are overjoyed that our partner Schaeffler has received the Industry 4.0 Innovation Award 2020 for its condition monitoring solution technology OPTIME which Salcomp has co-developed with Schaeffler! Salutation on receiving the most prestigious and deserving award. We are anticipating seeing many more successful joint projects! Read more </p>
+                  <a href="#" class="text-decoration-none">Read More >> </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 p-4">
+              <div class="card card-2 mb-3 shadow animate__animated animate__fadeInRightBig">
+                <img src="innovate-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-5 p-1">A strong partner network is a success factor for Schaeffler OPTIME</h5>
+                  <p class="card-text"> <i class="fa fa-calendar"></i> <small class="text-body-secondary">Nov 13,2020</small></p>
+                  <p class="card-text">The idea of creating a network of partners who bring diverse core expertise into product development is by no means new. Over the last few years, this approach has been repeatedly proclaimed as a decisive factor in future business success when it comes to digitalizing industry and realizing Industry 4.0. Please see details from here. </p>
+                  <a href="#" class="text-decoration-none">Read More >> </a>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      
+          <section id="slider" class="pt-5">
+            <div class="container">
+              <h1 class="text-center text-uppercase t6"><b> products</b></h1>
+              <div class="col-sm-12 p-2 mt-5 fs-4 t7" >
+                <p>Salcomp is the world leading charger manufacturer and has provided close to 4 billion units of mobile phone chargers for our customers in the past 3 decades, with power range from 2W to 100W. Salcomps future growth plans are focused on following categories.
+                </p>
+              </div>
+              <div class="slider p-3" id="products">
+                  <div class="owl-carousel" id="owl-carousel-2">
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="power.jpg" alt="" >
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>power</b></h5>
+                      <p class="text-center p-4"> <a href="power.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="carbon_fiber_product.png" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>carbon fiber products</b></h5>
+                      <p class="text-center p-4"> <a href="carbon_fiber_product.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="plastic.jpg" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>plastic</b></h5>
+                      <p class="text-center p-4"> <a href="plastic.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="5g_rf_device.jpeg" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>5g rf device</b></h5>
+                      <p class="text-center p-4"> <a href="5g_rf_device.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="soft_good.jpg" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>soft good</b></h5>
+                      <p class="text-center p-4"> <a href="soft_good.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="dnc.jpg" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>cnc</b></h5>
+                      <p class="text-center p-4"> <a href="cnc.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="Stamping.png" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>Stamping and cold forging</b></h5>
+                      <p class="text-center p-4"> <a href="stamping-and-cold-forging.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="die_cut.png" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase "><b>die cut</b></h5>
+                      <p class="text-center p-4"> <a href="die_cut.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="magnet.png" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>magnet</b></h5>
+                      <p class="text-center p-4"> <a href="magnet.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                    <div class="slider-card">
+                      <div class="d-flex justify-content-center align-items-center mb-4">
+                        <img src="iot_product.png" alt="">
+                      </div>
+                      <h5 class="mb-0 text-center text-uppercase"><b>iot products</b></h5>
+                      <p class="text-center p-4"><a href="iot.html" target="_blank" class="p-2 text-decoration-none text-light"style="border-radius:18px ;background-color: #f80303"> Read More </a></p>                  
+                    </div>
+                  </div>
+                </div>
+            </div>
+          
+            <style>
+              
+              @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+          html {
+            scroll-behavior: smooth;
+          }
+          body {
+            font-family: 'Noto Sans HK', sans-serif;
+            background: #fff;
+          }
+          
+          
+        .owl-carousel .item {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .overlay-content {
+            position: absolute;
+            bottom: 20%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .overlay-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .overlay-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .overlay-content a {
+            background-color: rgb(231, 31, 31);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .overlay-content a:hover {
+            background-color:rgb(211, 74, 74);
+        }
+
+          .slider {
+            margin-bottom: 20px;
+            position: relative;
+          }
+          .slider .owl-item.active.center .slider-card {
+            transform: scale(1.15);
+            opacity: 1;
+            color: #000;
+            border-radius: 16px;
+          }
+          .slider-card {
+            background: #fff;
+            padding: 0px 0px;
+            margin: 50px 15px 90px 15px;
+            border-radius: 5px;
+            box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+            transform: scale(0.9);
+            opacity: 0.5;
+            transition: all 0.3s;
+          }
+          .slider-card img {
+            border-radius: 5px 5px 0px 0px;
+          }
+          .owl-nav .owl-prev {
+      position: absolute;
+      top: calc(50% - 25px);
+      left: 0;
+      opacity: 1;
+      font-size: 30px !important;
+      z-index: 1;
+      }
+      .owl-nav .owl-next {
+      position: absolute;
+      top: calc(50% - 25px);
+      right: 0;
+      opacity: 1;
+      font-size: 30px !important;
+      z-index: 1;
+      }
+          .owl-dots {
+            text-align: center;
+          }
+          .owl-dots .owl-dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 10px;
+            background: #ccc !important;
+            margin-left: 3px;
+            margin-right: 3px;
+            outline: none;
+          }
+          .owl-dots .owl-dot.active {
+            background: #f44336 !important;
+          }    
+            </style>
+          
+          </section>
+            
+          <div class="container">
+             <div class="row">
+             <div class="col-sm-12">
+              <h1 class="text-center text-uppercase p-5 t8"><b> MANUFACTURING SERVICE</b></h1>
+                <p class="p-3 fs-4 t9">As one of the world’s pre-eminent suppliers in high volume charging and power supply product manufacturing, we are committed to providing our global customers with innovative solutions for their electrical manufacturing and services. Complex Electronics Manufacturing Services (EMS) is also available now. Our businesses can provide the right solution for your most demanding applications. 
+                  <a href="#" class="text-decoration-none">Read more</a>
+                </p>
+                 <img src="img.png" alt="Manufacturing imge" class="img-fluid mt-3" id="img-1">
+             </div>
+      
+             <div class="col-sm-12 mt-3" id="m-s">
+              <h1 class="text-center text-uppercase p-5 t10"><b> SUSTAINABILITY</b></h1>
+              <p class="fs-4 p-3  t12">Salcomp recognizes that a company’s business can only be sustainable if the company – in addition to being profitable – is also socially and environmentally responsible.</p>
+             </div>
+      
+             <div class="col-sm-12">
+              <h1 class="text-center text-uppercase p-5 t11" id="contact"><b> GET IN TOUCH </b></h1>
+                <p class="mt-5 text-center">Find our contact information  <a target="_blank" class="text-decoration-none" href="contact_information.html">here</a></p>
+                <img src="map1.png" alt="salcomp map" class="img-fluid mt-4 rounded" id="img-2">
+             </div>
+      
+             </div>
+          </div>
+           
+    
+        <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted mt-4 shadow ">
+    <!-- Section: Links  -->
+    <section class="p-3 text-light">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img src="salcomp_logo.png" class="img-fluid" height="10px" alt="" srcset="">
+            </h6>
+            <p class="fs-3">
+              The powering the smart world
+            </p>
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-none">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#index.html" class="text-reset text-decoration-none">Home</a>
+            </p>
+            <p>
+              <a href="file:///C:/Users/lenovo/Desktop/salcomp%20website%20project/index.html#abouts" class="text-reset text-decoration-none">About</a>
+            </p>
+            <p>
+              <a href="file:///C:/Users/lenovo/Desktop/salcomp%20website%20project/index.html#m-s" class="text-reset text-decoration-none">Sustainability</a>
+            </p>
+            <p>
+              <a href="file:///C:/Users/lenovo/Desktop/salcomp%20website%20project/index.html#contact" class="text-reset text-decoration-none">contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              contact 
+            </h6>
+            <p>
+              <img src="flag-3d-250.png" alt="india flag" class="img-fluid" height="10" width="40">
+              <a href="#!" class="text-reset text-decoration-none">India</a>
+            </p>
+            <p>
+              <img src="flag-3d-finland.png" alt="india flag" class="img-fluid" height="10" width="40">
+              <a href="#!" class="text-reset text-decoration-none">Finland</a>
+            </p>
+            <p>
+              <img src="flag-3d-china.png" alt="india flag" class="img-fluid" height="10" width="40">
+              <a href="#!" class="text-reset text-decoration-none">China</a>
+            </p>
+            <p>
+              <img src="flag-3d-usa.png" alt="india flag" class="img-fluid" height="10" width="40">
+              <a href="#!" class="text-reset text-decoration-none">USA</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-3">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4"></h6>
+                                                   
+            <p>
+              <img src="flag-3d-brazil.png" alt="india flag" class="img-fluid" height="10" width="40">
+              <a href="#!" class="text-reset text-decoration-none">Brazil</a>
+            </p>
+            <p>
+              <img src="flag-3d-taiwan.png" alt="india flag" class="img-fluid" height="10" width="40">
+              <a href="#!" class="text-reset text-decoration-none">chinese taipei</a>
+            </p>
+            <p>
+              <img src="flag-3d-south-korea.png" alt="india flag" class="img-fluid" height="10" width="40">
+              <a href="#!" class="text-reset text-decoration-none">south korea</a>
+            </p>
+            <p>
+              <img src="flag-3d-turkey.png" alt="india flag" class="img-fluid" height="10" width="40">
+              <a href="#!" class="text-reset text-decoration-none">Turkey</a>
+            </p>
+    
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+    </footer>
+    <!-- Footer -->
+         
+        </div>
+    
+    
+    <button id="back-to-top" class="shadow" > <i class='fa fa-angle-double-up'></i> </button>
+        
+       
+       <style>
+    
+   @media all and (min-width: 992px) {
+	 .navbar .dropdown-menu-end{ right:0; left: auto;  }
+	 .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0; font-weight: bolder; }
+	 .navbar .nav-item:hover .nav-link{ color:rgb(206,27,19);  }
+   .dropdown-item:hover{color:rgb(206,27,19); }
+	 .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	 .navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .4s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}	
+.navbar-toggler:focus{
+    box-shadow: none;
+
+}
+.navbar-toggler {
+      border: none;
+      outline: none;
+      padding: 0.25rem 0.75rem;
+      transition: transform 0.8s ease-in-out;
+
+    }
+    .navbar-toggler.open .navbar-toggler-icon {
+      display: none;
+    }
+    .navbar-toggler.open .close-icon {
+      display: block;
+    }
+    .close-icon:focus {
+      display: none;
+      box-shadow: none;
+
+    }
+    /* Style the button */
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 50px;
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#topBtn:hover {
+    background-color: #333; /* Add a dark-grey background on hover */
+}
+.card-1,.card-2{
+  border-left-color:  #f80303 ;
+  border-left-width: 5px;
+}
+::-webkit-scrollbar{
+  width: 6px;
+}
+::-webkit-scrollbar-track{
+  background: none;
+}
+::-webkit-scrollbar-thumb{
+ background: grey;
+ border-radius: 10px;
+}
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+        }
+        .content {
+            height: 2000px; /* Just to enable scrolling */
+            
+        }
+        /* Back to Top Button Styles */
+        #back-to-top {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background-color: rgb(231, 31, 31);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: none; /* Hidden by default */
+        }
+        #back-to-top:hover {
+            background-color: #555;
+        }
+       </style>
+
+       <script>
+                     $(document).ready(function(){
+            $("#owl-carousel-1").owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                dots: 0,
+                autoplay: true,
+                autoplayTimeout: 7000,
+                animateOut: 'fadeOut',
+                responsiveClass: true
+            });
+
+        });
+   $("#owl-carousel-2").owlCarousel({
+  	loop:true,
+    margin:10,
+    nav:true,
+	autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:false,
+    center: true,
+    navText: [
+	    "<i class='fa fa-angle-left'></i>",
+	    "<i class='fa fa-angle-right'></i>"
+	],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  })
+  const backToTopButton = document.getElementById('back-to-top');
+
+        // Show or hide the button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after scrolling 300px
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Scroll back to top when button is clicked
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+    ScrollReveal().reveal('.card-1', {
+        origin: 'left',
+        distance: '0.3rem',
+        duration: 2000,
+        reset: true
+    });
+
+    ScrollReveal().reveal('.card-2', {
+        origin: 'right',
+        distance: '0.3rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('.t1', {
+        origin: 'right',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    }); ScrollReveal().reveal('.t2', {
+        origin: 'left',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('.t3', {
+        origin: 'left',
+        distance: '0.4rem',
+        duration: 2500,
+        reset: true
+    }); ScrollReveal().reveal('.t4', {
+        origin: 'left',
+        distance: '0.4rem',
+        duration: 2700,
+        reset: true
+    });
+    ScrollReveal().reveal('.t5', {
+        origin: 'right',
+        distance: '0.4rem',
+        duration: 1700,
+        reset: true
+    });
+  ScrollReveal().reveal('#slide-1', {
+        origin: 'top',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('#slide-2', {
+        origin: 'bottom',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('', {
+        origin: 'bottom',
+        distance:  '0.4rem',
+        duration: 3000,
+        reset: true
+    });
+    ScrollReveal().reveal('.t7', {
+        origin: 'top',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('.t8', {
+        origin: 'left',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('.t9', {
+        origin: 'bottom',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('#img-1', {
+        origin: 'bottom',
+        distance: '0.3rem',
+        duration: 2300,
+        reset: true
+    });
+    ScrollReveal().reveal('.t10', {
+        origin: 'right',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    }); ScrollReveal().reveal('.t11', {
+        origin: 'left',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('.t12', {
+        origin: 'left',
+        distance: '0.4rem',
+        duration: 2000,
+        reset: true
+    });
+    ScrollReveal().reveal('#img-2', {
+        origin: 'bottom',
+        distance: '0.3rem',
+        duration: 2000,
+        reset: true
+    });
+});
+
+       </script>
+
+ 
+</body>
+</html>
